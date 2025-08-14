@@ -38,7 +38,7 @@ export default function RepoList() {
       try {
         // Try primary URL first
         const data = await fetchRepos(
-          "https://pinned-repos.teamsync.vip/stekatag"
+          "https://pinned-repos.teamsync.vip/aysenurarslann"
         );
         setRepos(data);
       } catch (primaryError) {
@@ -47,7 +47,7 @@ export default function RepoList() {
         try {
           // Try fallback URL
           const data = await fetchRepos(
-            "https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=stekatag"
+            "https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=aysenurarslann"
           );
           setRepos(data);
         } catch (fallbackError: any) {
